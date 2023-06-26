@@ -4,22 +4,26 @@
 //22 3 9 -> 22
 
 Console.WriteLine("Please, insert first number");
-double num1 = double.Parse(Console.ReadLine()!);
+double A = double.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Please, insert second number");
-double num2 = double.Parse(Console.ReadLine()!);
+double B = double.Parse(Console.ReadLine()!);
 
 Console.WriteLine("Please, insert third number");
-double num3 = double.Parse(Console.ReadLine()!);
+double C = double.Parse(Console.ReadLine()!);
 
-double max = num1;
+double max = 0;
 
-if (num1 > num2) max = num1;
+if (A > B) {
+    max = A;
+}
 else {
-    max = num2;
+    max = B;
 }
 
-if (max >= num3) max = num3;
+if (C > max){
+     max = C;
+}
 
 
 Console.WriteLine("Maximal number=");
