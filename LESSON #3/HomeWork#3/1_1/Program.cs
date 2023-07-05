@@ -3,7 +3,7 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.WriteLine("Задача 13 ");
+/*Console.WriteLine("Задача 13 ");
 
 Console.Write("Введи число: ");
 int anyNumber = Convert.ToInt32(Console.ReadLine());
@@ -13,4 +13,16 @@ if (anyNumberText.Length > 2){
 }
 else {
   Console.WriteLine("-> третьей цифры нет");
+}*/
+
+int anyNumber = int.Parse(Console.ReadLine()!);
+string anyNumberText = int.Parse(Console.ReadLine(anyNumber));
+
+
+if(anyNumberText.length>2)
+{
+Console.WriteLine ($"Третья цифра =" + anyNumberText[2]);
+}
+else{
+  Console.WriteLine("третьей цифры нет");
 }

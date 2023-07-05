@@ -28,3 +28,27 @@ else
      Console.WriteLine("min="+A);
 }
 
+/*Console.WriteLine("please write number: ");
+int a = int.Parse(Console.ReadLine()!);
+int b = int.Parse(Console.ReadLine()!);
+int c = int.Parse(Console.ReadLine()!);
+int max = a;
+
+if(a>b)
+{
+Console.WriteLine(a == b);
+}
+else{
+    max=b;
+    }
+if(a>c)
+{
+    Console.WriteLine(a == c);
+}
+else 
+{
+    max=c;
+}
+Console.WriteLine("maximal number= ");
+Console.WriteLine(max);
+*/
