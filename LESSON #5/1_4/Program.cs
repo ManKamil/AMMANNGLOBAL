@@ -26,3 +26,37 @@ int[] NewArray(int[] arr)
     // }
     // return index;
 }
+void PrintArray(int[] arr)
+{
+    var str = string.Join(" ", arr);
+    Console.Write($"{str} ");
+}
+
+// void PrintArray(int[] arr)
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         System.Console.WriteLine(arr[i]);
+//     }
+// }
+
+int[] MassNums(int size, int from, int to)
+{
+    int[] arr = new int[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = new Random().Next(from, to + 1);
+    }
+    return arr;
+}
+
+int a = int.Parse(Console.ReadLine()!);
+int b = int.Parse(Console.ReadLine()!);
+int c = int.Parse(Console.ReadLine()!);
+
+int[] mass = MassNums(a, b, c);
+PrintArray(mass);
+System.Console.WriteLine();
+int[] mass_2 = NewArray(mass);
+PrintArray(mass_2);
