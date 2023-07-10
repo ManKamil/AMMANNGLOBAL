@@ -5,14 +5,14 @@
 
 
 
-/*Console.Clear();
+Console.Clear();
 Console.WriteLine("Введи трёхзначное число: ");
 string numA = Console.ReadLine();
 string numB = Console.ReadLine();
 string numC = Console.ReadLine();
 
 Console.Write("Второе число:  ");
-Console.Write(numB);*/
+Console.Write(numB);
 
 
 Console.WriteLine ("Введите трёхзначное число:  ");
