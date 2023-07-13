@@ -1,5 +1,6 @@
-﻿/*Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-[345, 897, 568, 234] -> 2*/
+﻿/*Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+[3, 7, 23, 12] -> 19
+[-4, -6, 89, 6] -> 0*/
 
 void Print(int[] arr)
 {
@@ -19,17 +20,18 @@ int[] MassNums(int size, int from, int to)
     return arr;
 }
 
-void SumNum(int[] arr){
-    int Count = 0;
-    for(int i=0; i < arr.Length; i ++){
-        if(arr [i] % 2 ==0)
-            Count +=0;
-    }
+void SumNegPos(int[]arr)
+{    int count = 0;
+    for (int i = 1; i <= arr.Length; i+=2)
+        count += arr[i];
+
+    return count;
 }
 int num1 = int.Parse(Console.ReadLine()!);
 int num2 = int.Parse(Console.ReadLine()!);
 int num3 = int.Parse(Console.ReadLine()!);
+
 int[]mass = MassNums(num1, num2, num3);
 Print(mass);
 
-System.Console.WriteLine(SumNum(mass));
+Console.WriteLine(SumNegPos(mass));
